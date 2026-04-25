@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート — こどものもり</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green-deep:#2d6a4f;--green-main:#40916c;--green-light:#74c69d;--green-pale:#d8f3dc;
+  --warm-white:#fffdf7;--orange:#f4845f;--text-main:#3d3229;--text-sub:#7a6b5d;--radius:20px;
+  --shadow-card:0 2px 12px rgba(0,0,0,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Zen Maru Gothic','M PLUS Rounded 1c',sans-serif;color:var(--text-main);background:var(--warm-white);-webkit-font-smoothing:antialiased;}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,253,247,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(116,198,157,0.2);padding:12px 20px;}
+.header-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+.logo-area{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green-deep);}
+.logo-icon{font-size:28px;}.logo-text{font-weight:900;font-size:18px;letter-spacing:0.02em;}
+nav a{color:var(--text-sub);text-decoration:none;font-size:13px;font-weight:500;margin-left:20px;transition:color 0.2s;}
+nav a:hover{color:var(--green-main);}
+.page-hero{padding:48px 20px 32px;text-align:center;background:linear-gradient(180deg,var(--green-pale) 0%,var(--warm-white) 100%);}
+.page-hero h1{font-size:clamp(24px,5vw,36px);font-weight:900;color:var(--green-deep);}
+.page-hero p.sub{font-size:15px;color:var(--text-sub);margin-top:12px;line-height:1.7;}
+.doc-content{max-width:720px;margin:0 auto;padding:40px 20px 80px;}
+.doc-content h2{font-size:20px;font-weight:700;color:var(--green-deep);margin:36px 0 12px;padding-left:14px;border-left:4px solid var(--green-light);}
+.doc-content p{font-size:15px;line-height:1.9;color:var(--text-sub);margin-bottom:12px;}
+.doc-content ul{margin:8px 0 16px 20px;color:var(--text-sub);font-size:15px;line-height:1.9;}
+.doc-content li{margin-bottom:4px;}
+
+.contact-card{background:#fff;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-card);border:1px solid rgba(116,198,157,0.15);margin:24px 0;text-align:center;}
+.contact-card .icon{font-size:48px;display:block;margin-bottom:16px;}
+.contact-card h3{font-size:18px;font-weight:700;color:var(--green-deep);margin-bottom:8px;}
+.contact-card p{font-size:14px;color:var(--text-sub);margin-bottom:16px;}
+.contact-card a.mail-btn{display:inline-flex;align-items:center;gap:8px;background:var(--green-main);color:#fff;padding:12px 28px;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;transition:background 0.2s,transform 0.2s;}
+.contact-card a.mail-btn:hover{background:var(--green-deep);transform:translateY(-2px);}
+
+.faq-section{margin-top:40px;}
+.faq-item{background:#fff;border-radius:16px;padding:20px 24px;box-shadow:var(--shadow-card);border:1px solid rgba(116,198,157,0.1);margin-bottom:12px;}
+.faq-q{font-weight:700;font-size:15px;color:var(--green-deep);margin-bottom:8px;display:flex;align-items:flex-start;gap:8px;}
+.faq-q::before{content:'Q';background:var(--orange);color:#fff;width:24px;height:24px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0;margin-top:1px;}
+.faq-a{font-size:14px;color:var(--text-sub);line-height:1.8;padding-left:32px;}
+
+footer{background:var(--green-deep);color:rgba(255,255,255,0.7);padding:40px 20px;text-align:center;}
+footer a{color:rgba(255,255,255,0.85);text-decoration:none;margin:0 12px;font-size:13px;font-weight:500;transition:color 0.2s;}
+footer a:hover{color:#fff;}
+.footer-links{margin-bottom:20px;}.footer-copy{font-size:12px;opacity:0.6;}
+@media(max-width:600px){nav a{margin-left:12px;font-size:12px;}.doc-content{padding:28px 16px 60px;}.contact-card{padding:24px 16px;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-area"><span class="logo-icon">🌳</span><span class="logo-text">こどものもり</span></a>
+    <nav>
+      <a href="privacy.html">プライバシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="support.html">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>💬 サポート</h1>
+  <p class="sub">こどものもりに関するご質問・お困りごとはお気軽にどうぞ</p>
+</section>
+
+<div class="doc-content">
+
+  <!-- お問い合わせカード -->
+  <div class="contact-card">
+    <span class="icon">📧</span>
+    <h3>メールでお問い合わせ</h3>
+    <p>通常2営業日以内にご返信いたします</p>
+    <a href="mailto:support@example.com" class="mail-btn">
+      ✉️ support@example.com
+    </a>
+  </div>
+
+  <!-- よくある質問 -->
+  <div class="faq-section">
+    <h2>よくある質問（FAQ）</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">アプリは無料ですか？</div>
+      <div class="faq-a">基本機能は無料でご利用いただけます。一部のプレミアムコンテンツは有料プラン（PRO）にてご提供しています。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">対象年齢は何歳ですか？</div>
+      <div class="faq-a">0〜6歳のお子さまを主な対象としています。保護者の方と一緒にお楽しみください。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">オフラインでも使えますか？</div>
+      <div class="faq-a">かみしばいコンテンツはアプリに内蔵されているため、オフライン環境でもご利用いただけます。動画コンテンツの視聴にはインターネット接続が必要です。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">アカウントを削除したいのですが</div>
+      <div class="faq-a"><a href="delete-account.html" style="color:var(--green-main);font-weight:700;">アカウント削除ページ</a>にて手順をご案内しています。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">動画が再生されません</div>
+      <div class="faq-a">インターネット接続をご確認ください。また、アプリを最新バージョンにアップデートすることで解決する場合があります。問題が続く場合はメールにてお問い合わせください。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">機種変更したいのですが</div>
+      <div class="faq-a">同じメールアドレスでログインいただければ、新しい端末でもデータを引き継ぐことができます。</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">ホーム</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+    <a href="support.html">サポート</a>
+    <a href="delete-account.html">アカウント削除</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 こどものもり. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

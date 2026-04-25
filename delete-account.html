@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アカウント削除 — こどものもり</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green-deep:#2d6a4f;--green-main:#40916c;--green-light:#74c69d;--green-pale:#d8f3dc;
+  --warm-white:#fffdf7;--orange:#f4845f;--red:#d64045;--red-pale:#fde8e8;
+  --text-main:#3d3229;--text-sub:#7a6b5d;--radius:20px;
+  --shadow-card:0 2px 12px rgba(0,0,0,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Zen Maru Gothic','M PLUS Rounded 1c',sans-serif;color:var(--text-main);background:var(--warm-white);-webkit-font-smoothing:antialiased;}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,253,247,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(116,198,157,0.2);padding:12px 20px;}
+.header-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+.logo-area{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green-deep);}
+.logo-icon{font-size:28px;}.logo-text{font-weight:900;font-size:18px;letter-spacing:0.02em;}
+nav a{color:var(--text-sub);text-decoration:none;font-size:13px;font-weight:500;margin-left:20px;transition:color 0.2s;}
+nav a:hover{color:var(--green-main);}
+.page-hero{padding:48px 20px 32px;text-align:center;background:linear-gradient(180deg,var(--green-pale) 0%,var(--warm-white) 100%);}
+.page-hero h1{font-size:clamp(24px,5vw,36px);font-weight:900;color:var(--green-deep);}
+.page-hero p.sub{font-size:15px;color:var(--text-sub);margin-top:12px;line-height:1.7;}
+.doc-content{max-width:720px;margin:0 auto;padding:40px 20px 80px;}
+.doc-content h2{font-size:20px;font-weight:700;color:var(--green-deep);margin:36px 0 12px;padding-left:14px;border-left:4px solid var(--green-light);}
+.doc-content p{font-size:15px;line-height:1.9;color:var(--text-sub);margin-bottom:12px;}
+.doc-content ul{margin:8px 0 16px 20px;color:var(--text-sub);font-size:15px;line-height:1.9;}
+.doc-content li{margin-bottom:4px;}
+
+.warning-box{background:var(--red-pale);border:1px solid rgba(214,64,69,0.2);border-radius:14px;padding:20px 24px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.warning-box .icon{font-size:24px;flex-shrink:0;margin-top:2px;}
+.warning-box .text{font-size:14px;color:#8b2020;line-height:1.7;}
+.warning-box .text strong{color:var(--red);}
+
+.step-list{counter-reset:steps;margin:24px 0;}
+.step-item{background:#fff;border-radius:16px;padding:24px;box-shadow:var(--shadow-card);border:1px solid rgba(116,198,157,0.1);margin-bottom:16px;display:flex;gap:16px;align-items:flex-start;}
+.step-num{counter-increment:steps;width:40px;height:40px;border-radius:50%;background:var(--green-main);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;flex-shrink:0;}
+.step-num::after{content:counter(steps);}
+.step-body h3{font-size:16px;font-weight:700;color:var(--green-deep);margin-bottom:6px;}
+.step-body p{font-size:14px;color:var(--text-sub);line-height:1.7;margin:0;}
+
+.alt-method{background:var(--green-pale);border-radius:14px;padding:20px 24px;margin:24px 0;}
+.alt-method h3{font-size:16px;font-weight:700;color:var(--green-deep);margin-bottom:8px;}
+.alt-method p{font-size:14px;color:var(--text-sub);line-height:1.7;margin:0;}
+
+footer{background:var(--green-deep);color:rgba(255,255,255,0.7);padding:40px 20px;text-align:center;}
+footer a{color:rgba(255,255,255,0.85);text-decoration:none;margin:0 12px;font-size:13px;font-weight:500;transition:color 0.2s;}
+footer a:hover{color:#fff;}
+.footer-links{margin-bottom:20px;}.footer-copy{font-size:12px;opacity:0.6;}
+@media(max-width:600px){nav a{margin-left:12px;font-size:12px;}.doc-content{padding:28px 16px 60px;}.step-item{flex-direction:column;gap:12px;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-area"><span class="logo-icon">🌳</span><span class="logo-text">こどものもり</span></a>
+    <nav>
+      <a href="privacy.html">プライバシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="support.html">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>🗑️ アカウント削除</h1>
+  <p class="sub">アカウントの削除方法をご案内します</p>
+</section>
+
+<div class="doc-content">
+
+  <div class="warning-box">
+    <span class="icon">⚠️</span>
+    <div class="text">
+      <strong>アカウントを削除すると、以下のデータがすべて失われます。この操作は取り消せません。</strong><br>
+      ・お気に入り・閲覧履歴<br>
+      ・PRO プラン（サブスクリプション）の購入情報<br>
+      ・アカウントに紐づくすべてのデータ
+    </div>
+  </div>
+
+  <h2>アプリ内から削除する方法</h2>
+
+  <div class="step-list">
+    <div class="step-item">
+      <div class="step-num"></div>
+      <div class="step-body">
+        <h3>アプリを開く</h3>
+        <p>こどものもりアプリを起動し、ログインしてください。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num"></div>
+      <div class="step-body">
+        <h3>設定画面を開く</h3>
+        <p>保護者ホーム画面の右上にある「設定」アイコン（⚙️）をタップします。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num"></div>
+      <div class="step-body">
+        <h3>「アカウント削除」を選択</h3>
+        <p>設定メニューの最下部にある「アカウントを削除する」をタップします。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num"></div>
+      <div class="step-body">
+        <h3>確認して削除</h3>
+        <p>確認ダイアログが表示されます。内容をご確認のうえ「削除する」をタップしてください。アカウントと関連データがすべて削除されます。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="alt-method">
+    <h3>📧 メールでの削除依頼</h3>
+    <p>アプリ内から削除できない場合は、登録メールアドレスから<a href="mailto:support@example.com" style="color:var(--green-main);font-weight:700;">support@example.com</a> 宛にアカウント削除をご依頼ください。件名に「アカウント削除希望」と記載してください。5営業日以内に処理いたします。</p>
+  </div>
+
+  <h2>削除後について</h2>
+  <p>アカウント削除後、Firebase Authentication 上のアカウント情報および Cloud Firestore に保存されたユーザーデータはすべて完全に削除されます。</p>
+  <p>PRO プラン（サブスクリプション）をご利用中の場合、アカウント削除前にサブスクリプションの解約をお願いします。アカウント削除だけではサブスクリプションの課金は停止されません。</p>
+  <ul>
+    <li><strong>Android</strong>: Google Play ストア → お支払いと定期購入 → 定期購入 → こどものもり → 定期購入を解約</li>
+    <li><strong>iOS</strong>: 設定 → Apple ID → サブスクリプション → こどものもり → サブスクリプションをキャンセル</li>
+  </ul>
+
+  <h2>ご不明な点がありましたら</h2>
+  <p><a href="support.html" style="color:var(--green-main);font-weight:700;">サポートページ</a>よりお問い合わせください。</p>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">ホーム</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+    <a href="support.html">サポート</a>
+    <a href="delete-account.html">アカウント削除</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 こどものもり. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
